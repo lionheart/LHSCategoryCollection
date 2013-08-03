@@ -11,11 +11,10 @@ Pod::Spec.new do |s|
   s.public_header_files = '*.h'
   s.requires_arc = true
   s.pre_install do |pod, target_definition|
-    Dir.chdir(pod.root) do
-      results = `find . | grep FMDatabase.h`
-       if results == ''
-         system "rm Pods/LHSCategoryCollection/FMDatabase-*"
-       end
+    results = `find . | grep FMDatabase.h`
+    if results == ''
+      Dir.chdir(pod.root) do
+        system "rm FMDatabase+*"
       end
     end
   end
