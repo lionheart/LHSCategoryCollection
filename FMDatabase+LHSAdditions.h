@@ -1,5 +1,5 @@
 //
-//  FMDatabase+Additions.h
+//  FMDatabase+LHSAdditions.h
 //  LHSCategoryCollection
 //
 //  Copyright (c) 2013 Lionheart Software LLC. All rights reserved.

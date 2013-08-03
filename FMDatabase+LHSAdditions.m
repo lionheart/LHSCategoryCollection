@@ -1,13 +1,13 @@
 //
-//  FMDatabase+Additions.m
+//  FMDatabase+LHSAdditions.m
 //  LHSCategoryCollection
 //
 //  Copyright (c) 2013 Lionheart Software LLC. All rights reserved.
 //
 
-#import "FMDatabase+Additions.h"
+#import "FMDatabase+LHSAdditions.h"
 
-@implementation FMDatabase (Additions)
+@implementation FMDatabase (LHSAdditions)
 
 - (void)executeUpdateFromFileWithPath:(NSString *)path {
     NSFileHandle *handle = [NSFileHandle fileHandleForReadingAtPath:path];
