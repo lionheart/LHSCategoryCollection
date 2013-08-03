@@ -1,5 +1,5 @@
 //
-//  UIView+Additions.m
+//  UIView+LHSAdditions.m
 //  LHSCategoryCollection
 //
 //  Copyright (c) 2013 Lionheart Software LLC. All rights reserved.

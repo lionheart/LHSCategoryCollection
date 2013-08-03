@@ -1,5 +1,5 @@
 //
-//  UIView+Additions.h
+//  UIView+LHSAdditions.h
 //  LHCategoryCollection
 //
 //  Copyright (c) 2013 Lionheart Software LLC. All rights reserved.
