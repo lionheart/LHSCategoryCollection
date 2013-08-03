@@ -13,7 +13,8 @@ Pod::Spec.new do |s|
   s.pre_install do |pod, target_definition|
     system "find . | grep FMDatabase.h"
 
-    if $?.exitstatus == 1
+    if true
+    # if $?.exitstatus == 1
       Dir.chdir(pod.root) do
         system "rm FMDatabase+*"
       end
