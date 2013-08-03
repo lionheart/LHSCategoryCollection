@@ -12,7 +12,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.pre_install do |pod, target_definition|
     system "find . | grep FMDatabase.h"
-    puts "hey there"
 
     if $?.exitstatus == 1
       Dir.chdir(pod.root) do
