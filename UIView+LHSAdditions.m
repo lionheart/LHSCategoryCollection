@@ -11,17 +11,17 @@
 
 - (NSArray *)lhs_expandToFillSuperview {
     NSMutableArray *constraints = [NSMutableArray array];
-    [constraints addObject:[self.superview addConstraints:@"H:|[view]|" views:@{@"view": self}]];
-    [constraints addObject:[self.superview addConstraints:@"V:|[view]|" views:@{@"view": self}]];
+    [constraints addObject:[self.superview lhs_addConstraints:@"H:|[view]|" views:@{@"view": self}]];
+    [constraints addObject:[self.superview lhs_addConstraints:@"V:|[view]|" views:@{@"view": self}]];
     return constraints;
 }
 
 - (NSArray *)lhs_centerHorizontallyForView:(UIView *)view {
-    return [self centerHorizontallyForView:view width:0];
+    return [self lhs_centerHorizontallyForView:view width:0];
 }
 
 - (NSArray *)lhs_centerVerticallyForView:(UIView *)view {
-    return [self centerVerticallyForView:view height:0];
+    return [self lhs_centerVerticallyForView:view height:0];
 }
 
 - (NSArray *)lhs_centerHorizontallyForView:(UIView *)view width:(CGFloat)width {
@@ -31,7 +31,7 @@
     NSMutableArray *constraints = [@[constraint] mutableCopy];
     
     if (width > 0) {
-        [constraints addObjectsFromArray:[self addConstraints:@"H:|-(>=1)-[view(width)]-(>=1)-|" metrics:@{@"width": @(width)} views:@{@"view": view}]];
+        [constraints addObjectsFromArray:[self lhs_addConstraints:@"H:|-(>=1)-[view(width)]-(>=1)-|" metrics:@{@"width": @(width)} views:@{@"view": view}]];
     }
     
     return constraints;
@@ -44,7 +44,7 @@
     NSMutableArray *constraints = [@[constraint] mutableCopy];
     
     if (height > 0) {
-        [constraints addObjectsFromArray:[self addConstraints:@"V:|-(>=1)-[view(height)]-(>=1)-|" metrics:@{@"height": @(height)} views:@{@"view": view}]];
+        [constraints addObjectsFromArray:[self lhs_addConstraints:@"V:|-(>=1)-[view(height)]-(>=1)-|" metrics:@{@"height": @(height)} views:@{@"view": view}]];
     }
     
     return constraints;
@@ -53,7 +53,7 @@
 #pragma - Auto Layout
 
 - (NSArray *)lhs_addConstraints:(NSString *)constraint views:(NSDictionary *)views {
-    return [self addConstraints:constraint metrics:0 views:views];
+    return [self lhs_addConstraints:constraint metrics:0 views:views];
 }
 
 - (NSArray *)lhs_addConstraints:(NSString *)constraint metrics:(NSDictionary *)metrics views:(NSDictionary *)views {
