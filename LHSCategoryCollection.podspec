@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage     = "lionheartsw.com"
   s.license      = 'Apache 2.0'
   s.author       = { "Dan Loewenherz" => "dan@lionheartsw.com" }
-  s.source       = { :git => "https://github.com/lionheart/LHSCategoryCollection.git", :commit => "7db031976d5e1b1ac0abf562ce75b8d6bdfb81a6" }
+  s.source       = { :git => "https://github.com/lionheart/LHSCategoryCollection.git", :commit => "6b2bc3d9bdf85edf9c58f9ad5351e6d0a39a189c" }
 
   s.source_files = '*.{h,m}'
   s.public_header_files = '*.h'
