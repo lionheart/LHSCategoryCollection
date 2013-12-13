@@ -1,0 +1,86 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		371EE5D0185B630A005DB908 /* UIViewController+LHSAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LHSAdditions.h"; sourceTree = "<group>"; };
+		371EE5D1185B630A005DB908 /* UIViewController+LHSAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LHSAdditions.m"; sourceTree = "<group>"; };
+		371EE5D2185B630A005DB908 /* NSAttributedString+Attributes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Attributes.m"; sourceTree = "<group>"; };
+		371EE5D3185B630A005DB908 /* FMDatabase+LHSAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+LHSAdditions.h"; sourceTree = "<group>"; };
+		371EE5D4185B630A005DB908 /* FMDatabase+LHSAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+LHSAdditions.m"; sourceTree = "<group>"; };
+		371EE5D5185B630A005DB908 /* UIView+LHSAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+LHSAdditions.h"; sourceTree = "<group>"; };
+		371EE5D6185B630A005DB908 /* UIView+LHSAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LHSAdditions.m"; sourceTree = "<group>"; };
+		371EE5D7185B630A005DB908 /* NSAttributedString+Attributes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Attributes.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		371EE5C9185B62DF005DB908 = {
+			isa = PBXGroup;
+			children = (
+				371EE5D0185B630A005DB908 /* UIViewController+LHSAdditions.h */,
+				371EE5D1185B630A005DB908 /* UIViewController+LHSAdditions.m */,
+				371EE5D2185B630A005DB908 /* NSAttributedString+Attributes.m */,
+				371EE5D3185B630A005DB908 /* FMDatabase+LHSAdditions.h */,
+				371EE5D4185B630A005DB908 /* FMDatabase+LHSAdditions.m */,
+				371EE5D5185B630A005DB908 /* UIView+LHSAdditions.h */,
+				371EE5D6185B630A005DB908 /* UIView+LHSAdditions.m */,
+				371EE5D7185B630A005DB908 /* NSAttributedString+Attributes.h */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		371EE5CA185B62DF005DB908 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+			};
+			buildConfigurationList = 371EE5CD185B62DF005DB908 /* Build configuration list for PBXProject "LHSCategoryCollection" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 371EE5C9185B62DF005DB908;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		371EE5CE185B62DF005DB908 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		371EE5CF185B62DF005DB908 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		371EE5CD185B62DF005DB908 /* Build configuration list for PBXProject "LHSCategoryCollection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				371EE5CE185B62DF005DB908 /* Debug */,
+				371EE5CF185B62DF005DB908 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 371EE5CA185B62DF005DB908 /* Project object */;
+}
