@@ -7,7 +7,20 @@
 		<key>LHSCategoryCollection.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>371EE5DB185B6390005DB908</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>371EE5EB185B6390005DB908</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
