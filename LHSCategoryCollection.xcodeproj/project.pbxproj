@@ -10,24 +10,10 @@
 		371EE5E0185B6390005DB908 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371EE5DF185B6390005DB908 /* Foundation.framework */; };
 		371EE5E5185B6390005DB908 /* LHSCategoryCollection.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 371EE5E4185B6390005DB908 /* LHSCategoryCollection.h */; };
 		371EE5E7185B6390005DB908 /* LHSCategoryCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 371EE5E6185B6390005DB908 /* LHSCategoryCollection.m */; };
-		371EE5EE185B6390005DB908 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371EE5ED185B6390005DB908 /* XCTest.framework */; };
-		371EE5EF185B6390005DB908 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371EE5DF185B6390005DB908 /* Foundation.framework */; };
-		371EE5F1185B6390005DB908 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371EE5F0185B6390005DB908 /* UIKit.framework */; };
-		371EE5F4185B6390005DB908 /* libLHSCategoryCollection.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 371EE5DC185B6390005DB908 /* libLHSCategoryCollection.a */; };
 		37405C1018613A380052213A /* UIImage+Tint.m in Sources */ = {isa = PBXBuildFile; fileRef = 37405C0F18613A380052213A /* UIImage+Tint.m */; };
 		37405C1318613A890052213A /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 37405C1218613A890052213A /* NSData+Base64.m */; };
 		37405C17186150250052213A /* UIApplication+LHSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 37405C16186150250052213A /* UIApplication+LHSAdditions.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		371EE5F2185B6390005DB908 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 371EE5CA185B62DF005DB908 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 371EE5DB185B6390005DB908;
-			remoteInfo = LHSCategoryCollection;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		371EE5DA185B6390005DB908 /* CopyFiles */ = {
@@ -56,7 +42,6 @@
 		371EE5E3185B6390005DB908 /* LHSCategoryCollection-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LHSCategoryCollection-Prefix.pch"; sourceTree = "<group>"; };
 		371EE5E4185B6390005DB908 /* LHSCategoryCollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHSCategoryCollection.h; sourceTree = "<group>"; };
 		371EE5E6185B6390005DB908 /* LHSCategoryCollection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHSCategoryCollection.m; sourceTree = "<group>"; };
-		371EE5EC185B6390005DB908 /* LHSCategoryCollectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LHSCategoryCollectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		371EE5ED185B6390005DB908 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		371EE5F0185B6390005DB908 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		37405C0E18613A380052213A /* UIImage+Tint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tint.h"; sourceTree = "<group>"; };
@@ -73,17 +58,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				371EE5E0185B6390005DB908 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		371EE5E9185B6390005DB908 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				371EE5EE185B6390005DB908 /* XCTest.framework in Frameworks */,
-				371EE5F4185B6390005DB908 /* libLHSCategoryCollection.a in Frameworks */,
-				371EE5F1185B6390005DB908 /* UIKit.framework in Frameworks */,
-				371EE5EF185B6390005DB908 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				371EE5DC185B6390005DB908 /* libLHSCategoryCollection.a */,
-				371EE5EC185B6390005DB908 /* LHSCategoryCollectionTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,24 +143,6 @@
 			productReference = 371EE5DC185B6390005DB908 /* libLHSCategoryCollection.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		371EE5EB185B6390005DB908 /* LHSCategoryCollectionTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 371EE600185B6391005DB908 /* Build configuration list for PBXNativeTarget "LHSCategoryCollectionTests" */;
-			buildPhases = (
-				371EE5E8185B6390005DB908 /* Sources */,
-				371EE5E9185B6390005DB908 /* Frameworks */,
-				371EE5EA185B6390005DB908 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				371EE5F3185B6390005DB908 /* PBXTargetDependency */,
-			);
-			name = LHSCategoryCollectionTests;
-			productName = LHSCategoryCollectionTests;
-			productReference = 371EE5EC185B6390005DB908 /* LHSCategoryCollectionTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -209,20 +164,9 @@
 			projectRoot = "";
 			targets = (
 				371EE5DB185B6390005DB908 /* LHSCategoryCollection */,
-				371EE5EB185B6390005DB908 /* LHSCategoryCollectionTests */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		371EE5EA185B6390005DB908 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		371EE5D8185B6390005DB908 /* Sources */ = {
@@ -236,22 +180,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		371EE5E8185B6390005DB908 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		371EE5F3185B6390005DB908 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 371EE5DB185B6390005DB908 /* LHSCategoryCollection */;
-			targetProxy = 371EE5F2185B6390005DB908 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		371EE5CE185B62DF005DB908 /* Debug */ = {
@@ -350,96 +279,6 @@
 			};
 			name = Release;
 		};
-		371EE601185B6391005DB908 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LHSCategoryCollection/LHSCategoryCollection-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "LHSCategoryCollectionTests/LHSCategoryCollectionTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		371EE602185B6391005DB908 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LHSCategoryCollection/LHSCategoryCollection-Prefix.pch";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "LHSCategoryCollectionTests/LHSCategoryCollectionTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -457,15 +296,6 @@
 			buildConfigurations = (
 				371EE5FE185B6391005DB908 /* Debug */,
 				371EE5FF185B6391005DB908 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		371EE600185B6391005DB908 /* Build configuration list for PBXNativeTarget "LHSCategoryCollectionTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				371EE601185B6391005DB908 /* Debug */,
-				371EE602185B6391005DB908 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
