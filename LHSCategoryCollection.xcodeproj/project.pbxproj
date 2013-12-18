@@ -16,6 +16,7 @@
 		371EE5F4185B6390005DB908 /* libLHSCategoryCollection.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 371EE5DC185B6390005DB908 /* libLHSCategoryCollection.a */; };
 		37405C1018613A380052213A /* UIImage+Tint.m in Sources */ = {isa = PBXBuildFile; fileRef = 37405C0F18613A380052213A /* UIImage+Tint.m */; };
 		37405C1318613A890052213A /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 37405C1218613A890052213A /* NSData+Base64.m */; };
+		37405C17186150250052213A /* UIApplication+LHSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 37405C16186150250052213A /* UIApplication+LHSAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		37405C0F18613A380052213A /* UIImage+Tint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tint.m"; sourceTree = "<group>"; };
 		37405C1118613A890052213A /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		37405C1218613A890052213A /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		37405C15186150250052213A /* UIApplication+LHSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+LHSAdditions.h"; sourceTree = "<group>"; };
+		37405C16186150250052213A /* UIApplication+LHSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+LHSAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 		371EE5C9185B62DF005DB908 = {
 			isa = PBXGroup;
 			children = (
+				37405C15186150250052213A /* UIApplication+LHSAdditions.h */,
+				37405C16186150250052213A /* UIApplication+LHSAdditions.m */,
 				37405C1118613A890052213A /* NSData+Base64.h */,
 				37405C1218613A890052213A /* NSData+Base64.m */,
 				37405C0E18613A380052213A /* UIImage+Tint.h */,
@@ -226,6 +231,7 @@
 			files = (
 				37405C1018613A380052213A /* UIImage+Tint.m in Sources */,
 				371EE5E7185B6390005DB908 /* LHSCategoryCollection.m in Sources */,
+				37405C17186150250052213A /* UIApplication+LHSAdditions.m in Sources */,
 				37405C1318613A890052213A /* NSData+Base64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
