@@ -14,6 +14,8 @@
 		371EE5EF185B6390005DB908 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371EE5DF185B6390005DB908 /* Foundation.framework */; };
 		371EE5F1185B6390005DB908 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371EE5F0185B6390005DB908 /* UIKit.framework */; };
 		371EE5F4185B6390005DB908 /* libLHSCategoryCollection.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 371EE5DC185B6390005DB908 /* libLHSCategoryCollection.a */; };
+		37405C1018613A380052213A /* UIImage+Tint.m in Sources */ = {isa = PBXBuildFile; fileRef = 37405C0F18613A380052213A /* UIImage+Tint.m */; };
+		37405C1318613A890052213A /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 37405C1218613A890052213A /* NSData+Base64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,10 @@
 		371EE5EC185B6390005DB908 /* LHSCategoryCollectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LHSCategoryCollectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		371EE5ED185B6390005DB908 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		371EE5F0185B6390005DB908 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		37405C0E18613A380052213A /* UIImage+Tint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tint.h"; sourceTree = "<group>"; };
+		37405C0F18613A380052213A /* UIImage+Tint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tint.m"; sourceTree = "<group>"; };
+		37405C1118613A890052213A /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		37405C1218613A890052213A /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,10 @@
 		371EE5C9185B62DF005DB908 = {
 			isa = PBXGroup;
 			children = (
+				37405C1118613A890052213A /* NSData+Base64.h */,
+				37405C1218613A890052213A /* NSData+Base64.m */,
+				37405C0E18613A380052213A /* UIImage+Tint.h */,
+				37405C0F18613A380052213A /* UIImage+Tint.m */,
 				371EE5D0185B630A005DB908 /* UIViewController+LHSAdditions.h */,
 				371EE5D1185B630A005DB908 /* UIViewController+LHSAdditions.m */,
 				371EE5D2185B630A005DB908 /* NSAttributedString+Attributes.m */,
@@ -214,7 +224,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37405C1018613A380052213A /* UIImage+Tint.m in Sources */,
 				371EE5E7185B6390005DB908 /* LHSCategoryCollection.m in Sources */,
+				37405C1318613A890052213A /* NSData+Base64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +453,7 @@
 				371EE5FF185B6391005DB908 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		371EE600185B6391005DB908 /* Build configuration list for PBXNativeTarget "LHSCategoryCollectionTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +462,7 @@
 				371EE602185B6391005DB908 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
