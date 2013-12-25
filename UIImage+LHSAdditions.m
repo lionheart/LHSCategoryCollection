@@ -7,6 +7,7 @@
 //
 
 #import "UIImage+LHSAdditions.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation UIImage (LHSAdditions)
 
@@ -44,19 +45,15 @@
     return [UIImage imageWithCIImage:image];
 }
 
-// Source: http://stackoverflow.com/a/8017292/39155
++ (UIImage *)lhs_statusBarScreenshot {
+    return [[UIImage lhs_screenshot] lhs_imageByCroppingToRect:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.height, 20)];
+}
+
+// Source: https://developer.apple.com/library/ios/qa/qa1703/_index.html#//apple_ref/doc/uid/DTS40010193
+// Edited by: http://stackoverflow.com/a/8017292/39155
+// With further modifications
 + (UIImage *)lhs_screenshot {
-    CGSize imageSize = CGSizeZero;
-
-    UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
-
-    // TODO: Isn't the output of these two blocks the same?
-    if (UIInterfaceOrientationIsPortrait(orientation)) {
-        imageSize = [UIScreen mainScreen].bounds.size;
-    }
-    else {
-        imageSize = CGSizeMake([UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width);
-    }
+    CGSize imageSize = [UIScreen mainScreen].bounds.size;
     
     UIGraphicsBeginImageContextWithOptions(imageSize, NO, 0);
     CGContextRef context = UIGraphicsGetCurrentContext();
@@ -65,21 +62,28 @@
         CGContextTranslateCTM(context, window.center.x, window.center.y);
         CGContextConcatCTM(context, window.transform);
         CGContextTranslateCTM(context, -window.bounds.size.width * window.layer.anchorPoint.x, -window.bounds.size.height * window.layer.anchorPoint.y);
-        if (orientation == UIInterfaceOrientationLandscapeLeft) {
-            CGContextRotateCTM(context, M_PI_2);
-            CGContextTranslateCTM(context, 0, -imageSize.width);
-        } else if (orientation == UIInterfaceOrientationLandscapeRight) {
-            CGContextRotateCTM(context, -M_PI_2);
-            CGContextTranslateCTM(context, -imageSize.height, 0);
-        } else if (orientation == UIInterfaceOrientationPortraitUpsideDown) {
-            CGContextRotateCTM(context, M_PI);
-            CGContextTranslateCTM(context, -imageSize.width, -imageSize.height);
+        
+        switch ([UIApplication sharedApplication].statusBarOrientation) {
+            case UIInterfaceOrientationLandscapeLeft:
+                CGContextRotateCTM(context, M_PI_2);
+                CGContextTranslateCTM(context, 0, -imageSize.width);
+                break;
+                
+            case UIInterfaceOrientationLandscapeRight:
+                CGContextRotateCTM(context, -M_PI_2);
+                CGContextTranslateCTM(context, -imageSize.height, 0);
+                break;
+
+            case UIInterfaceOrientationPortraitUpsideDown:
+                CGContextRotateCTM(context, M_PI);
+                CGContextTranslateCTM(context, -imageSize.width, -imageSize.height);
+                break;
+
+            default:
+                break;
         }
-        if ([window respondsToSelector:@selector(drawViewHierarchyInRect:afterScreenUpdates:)]) {
-            [window drawViewHierarchyInRect:window.bounds afterScreenUpdates:YES];
-        } else {
-            [window.layer renderInContext:context];
-        }
+
+        [window drawViewHierarchyInRect:window.bounds afterScreenUpdates:YES];
         CGContextRestoreGState(context);
     }
     

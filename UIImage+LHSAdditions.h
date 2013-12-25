@@ -14,5 +14,6 @@
 - (UIImage *)lhs_imageWithAlpha:(CGFloat)alpha;
 - (UIImage *)lhs_imageByCroppingToRect:(CGRect)rect;
 + (UIImage *)lhs_screenshot;
++ (UIImage *)lhs_statusBarScreenshot;
 
 @end
