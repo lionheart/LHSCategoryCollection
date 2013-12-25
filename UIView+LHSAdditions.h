@@ -9,7 +9,6 @@
 
 @interface UIView (LHSAdditions)
 
-+ (UIView *)lhs_snapshotContainingStatusBar;
 - (NSArray *)lhs_expandToFillSuperview;
 - (NSArray *)lhs_addConstraints:(NSString *)constraint views:(NSDictionary *)views;
 - (NSArray *)lhs_addConstraints:(NSString *)constraint metrics:(NSDictionary *)metrics views:(NSDictionary *)views;

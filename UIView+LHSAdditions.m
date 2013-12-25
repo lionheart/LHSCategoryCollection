@@ -9,13 +9,6 @@
 
 @implementation UIView (LHSAdditions)
 
-+ (UIView *)lhs_snapshotContainingStatusBar {
-    UIView *view = [[UIScreen mainScreen] snapshotViewAfterScreenUpdates:NO];
-    UIScreen *screen = [UIScreen mainScreen];
-    return [view resizableSnapshotViewFromRect:CGRectMake(0, 0, screen.bounds.size.width, 20)
-                            afterScreenUpdates:YES withCapInsets:UIEdgeInsetsZero];
-}
-
 #pragma mark - Auto Layout Helpers
 
 - (NSArray *)lhs_expandToFillSuperview {
