@@ -10,15 +10,5 @@ Pod::Spec.new do |s|
   s.source_files = '*.{h,m}'
   s.public_header_files = '*.h'
   s.requires_arc = true
-  s.pre_install do |pod, target_definition|
-    system "find . | grep FMDatabase.h"
-
-    if true
-    # if $?.exitstatus == 1
-      Dir.chdir(pod.root) do
-        system "rm FMDatabase+*"
-      end
-    end
-  end
 end
 

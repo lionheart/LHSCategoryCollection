@@ -45,10 +45,6 @@
     return [UIImage imageWithCIImage:image];
 }
 
-+ (UIImage *)lhs_statusBarScreenshot {
-    return [[UIImage lhs_screenshot] lhs_imageByCroppingToRect:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.height, 20)];
-}
-
 // Source: https://developer.apple.com/library/ios/qa/qa1703/_index.html#//apple_ref/doc/uid/DTS40010193
 // Edited by: http://stackoverflow.com/a/8017292/39155
 // With further modifications
@@ -83,7 +79,7 @@
                 break;
         }
 
-        [window drawViewHierarchyInRect:window.bounds afterScreenUpdates:YES];
+        [window drawViewHierarchyInRect:window.bounds afterScreenUpdates:NO];
         CGContextRestoreGState(context);
     }
     
