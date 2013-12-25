@@ -9,7 +9,11 @@
 
 @interface UIView (LHSAdditions)
 
+- (NSLayoutConstraint *)lhs_constraintForWidth:(CGFloat)width;
+- (NSLayoutConstraint *)lhs_constraintForHeight:(CGFloat)height;
 - (NSArray *)lhs_expandToFillSuperview;
+- (NSArray *)lhs_fillWidthOfSuperview;
+- (NSArray *)lhs_fillHeightOfSuperview;
 - (NSArray *)lhs_addConstraints:(NSString *)constraint views:(NSDictionary *)views;
 - (NSArray *)lhs_addConstraints:(NSString *)constraint metrics:(NSDictionary *)metrics views:(NSDictionary *)views;
 - (NSArray *)lhs_centerHorizontallyForView:(UIView *)view;

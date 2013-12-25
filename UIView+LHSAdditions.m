@@ -11,11 +11,28 @@
 
 #pragma mark - Auto Layout Helpers
 
-- (NSArray *)lhs_expandToFillSuperview {
-    NSMutableArray *constraints = [NSMutableArray array];
-    [constraints addObject:[self.superview lhs_addConstraints:@"H:|[view]|" views:@{@"view": self}]];
-    [constraints addObject:[self.superview lhs_addConstraints:@"V:|[view]|" views:@{@"view": self}]];
+- (NSLayoutConstraint *)lhs_constraintForWidth:(CGFloat)width {
+    return [NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:0 constant:width];
+}
+
+- (NSLayoutConstraint *)lhs_constraintForHeight:(CGFloat)height {
+    return [NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:0 constant:height];
+}
+
+- (NSArray *)lhs_fillHeightOfSuperview {
+    NSArray *constraints = [self.superview lhs_addConstraints:@"V:|[view]|" views:@{@"view": self}];
+    [self.superview addConstraints:constraints];
     return constraints;
+}
+
+- (NSArray *)lhs_fillWidthOfSuperview {
+    NSArray *constraints = [self.superview lhs_addConstraints:@"H:|[view]|" views:@{@"view": self}];
+    [self.superview addConstraints:constraints];
+    return constraints;
+}
+
+- (NSArray *)lhs_expandToFillSuperview {
+    return [[self lhs_fillHeightOfSuperview] arrayByAddingObjectsFromArray:[self lhs_fillWidthOfSuperview]];
 }
 
 - (NSArray *)lhs_centerHorizontallyForView:(UIView *)view {

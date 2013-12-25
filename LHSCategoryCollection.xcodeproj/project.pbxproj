@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		371EE5E0185B6390005DB908 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371EE5DF185B6390005DB908 /* Foundation.framework */; };
+		371EE5E0185B6390005DB908 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371EE5DF185B6390005DB908 /* Foundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		371EE5E5185B6390005DB908 /* LHSCategoryCollection.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 371EE5E4185B6390005DB908 /* LHSCategoryCollection.h */; };
 		371EE5E7185B6390005DB908 /* LHSCategoryCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 371EE5E6185B6390005DB908 /* LHSCategoryCollection.m */; };
+		372AEEFA186B85E100F131A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372AEEF9186B85E100F131A9 /* UIKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		372AEEFC186B85EA00F131A9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372AEEFB186B85EA00F131A9 /* QuartzCore.framework */; };
 		37405C1318613A890052213A /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 37405C1218613A890052213A /* NSData+Base64.m */; };
 		37405C17186150250052213A /* UIApplication+LHSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 37405C16186150250052213A /* UIApplication+LHSAdditions.m */; };
+		37C6D617186B872E0096FA88 /* UIViewController+LHSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 371EE5D1185B630A005DB908 /* UIViewController+LHSAdditions.m */; };
+		37C6D618186B872E0096FA88 /* NSAttributedString+Attributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 371EE5D2185B630A005DB908 /* NSAttributedString+Attributes.m */; };
+		37C6D619186B872E0096FA88 /* FMDatabase+LHSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 371EE5D4185B630A005DB908 /* FMDatabase+LHSAdditions.m */; };
+		37C6D61A186B872E0096FA88 /* UIView+LHSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 371EE5D6185B630A005DB908 /* UIView+LHSAdditions.m */; };
 		37DCAF12186B325900417D36 /* UIImage+LHSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DCAF11186B325900417D36 /* UIImage+LHSAdditions.m */; };
-		37DCAF14186B36EF00417D36 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37DCAF13186B36EF00417D36 /* QuartzCore.framework */; };
 		37DCAF17186B482900417D36 /* UIScreen+LHSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DCAF16186B482900417D36 /* UIScreen+LHSAdditions.m */; };
 /* End PBXBuildFile section */
 
@@ -44,14 +49,14 @@
 		371EE5E3185B6390005DB908 /* LHSCategoryCollection-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LHSCategoryCollection-Prefix.pch"; sourceTree = "<group>"; };
 		371EE5E4185B6390005DB908 /* LHSCategoryCollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHSCategoryCollection.h; sourceTree = "<group>"; };
 		371EE5E6185B6390005DB908 /* LHSCategoryCollection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHSCategoryCollection.m; sourceTree = "<group>"; };
-		371EE5F0185B6390005DB908 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		372AEEF9186B85E100F131A9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		372AEEFB186B85EA00F131A9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		37405C1118613A890052213A /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		37405C1218613A890052213A /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		37405C15186150250052213A /* UIApplication+LHSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+LHSAdditions.h"; sourceTree = "<group>"; };
 		37405C16186150250052213A /* UIApplication+LHSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+LHSAdditions.m"; sourceTree = "<group>"; };
 		37DCAF10186B325900417D36 /* UIImage+LHSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LHSAdditions.h"; sourceTree = "<group>"; };
 		37DCAF11186B325900417D36 /* UIImage+LHSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LHSAdditions.m"; sourceTree = "<group>"; };
-		37DCAF13186B36EF00417D36 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		37DCAF15186B482900417D36 /* UIScreen+LHSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+LHSAdditions.h"; sourceTree = "<group>"; };
 		37DCAF16186B482900417D36 /* UIScreen+LHSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+LHSAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,7 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37DCAF14186B36EF00417D36 /* QuartzCore.framework in Frameworks */,
+				372AEEFC186B85EA00F131A9 /* QuartzCore.framework in Frameworks */,
+				372AEEFA186B85E100F131A9 /* UIKit.framework in Frameworks */,
 				371EE5E0185B6390005DB908 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,9 +111,9 @@
 		371EE5DE185B6390005DB908 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				37DCAF13186B36EF00417D36 /* QuartzCore.framework */,
+				372AEEFB186B85EA00F131A9 /* QuartzCore.framework */,
+				372AEEF9186B85E100F131A9 /* UIKit.framework */,
 				371EE5DF185B6390005DB908 /* Foundation.framework */,
-				371EE5F0185B6390005DB908 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -180,6 +186,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37C6D617186B872E0096FA88 /* UIViewController+LHSAdditions.m in Sources */,
+				37C6D618186B872E0096FA88 /* NSAttributedString+Attributes.m in Sources */,
+				37C6D619186B872E0096FA88 /* FMDatabase+LHSAdditions.m in Sources */,
+				37C6D61A186B872E0096FA88 /* UIView+LHSAdditions.m in Sources */,
 				371EE5E7185B6390005DB908 /* LHSCategoryCollection.m in Sources */,
 				37405C17186150250052213A /* UIApplication+LHSAdditions.m in Sources */,
 				37DCAF17186B482900417D36 /* UIScreen+LHSAdditions.m in Sources */,
@@ -240,7 +250,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -278,7 +288,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
