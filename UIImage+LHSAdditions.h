@@ -13,5 +13,6 @@
 - (UIImage *)lhs_imageWithColor:(UIColor *)color;
 - (UIImage *)lhs_imageWithAlpha:(CGFloat)alpha;
 - (UIImage *)lhs_imageByCroppingToRect:(CGRect)rect;
++ (UIImage *)lhs_screenshot;
 
 @end
