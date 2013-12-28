@@ -12,11 +12,43 @@
 #pragma mark - Auto Layout Helpers
 
 - (NSLayoutConstraint *)lhs_constraintForWidth:(CGFloat)width {
-    return [NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:0 constant:width];
+    return [NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:width];
 }
 
 - (NSLayoutConstraint *)lhs_constraintForHeight:(CGFloat)height {
-    return [NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:0 constant:height];
+    return [NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:height];
+}
+
+- (NSLayoutConstraint *)lhs_setHeight:(CGFloat)height {
+    NSLayoutConstraint *constraint = [self lhs_constraintForHeight:height];
+    [self.superview addConstraint:constraint];
+    return constraint;
+}
+
+- (NSLayoutConstraint *)lhs_setWidth:(CGFloat)width {
+    NSLayoutConstraint *constraint = [self lhs_constraintForWidth:width];
+    [self.superview addConstraint:constraint];
+    return constraint;
+}
+
+- (NSLayoutConstraint *)lhs_matchHeightOfSuperviewWithPadding:(CGFloat)padding {
+    NSLayoutConstraint *constraint = [NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:self.superview attribute:NSLayoutAttributeHeight multiplier:1 constant:padding];
+    [self.superview addConstraint:constraint];
+    return constraint;
+}
+
+- (NSLayoutConstraint *)lhs_matchWidthOfSuperviewWithPadding:(CGFloat)padding {
+    NSLayoutConstraint *constraint = [NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.superview attribute:NSLayoutAttributeWidth multiplier:1 constant:padding];
+    [self.superview addConstraint:constraint];
+    return constraint;
+}
+
+- (NSLayoutConstraint *)lhs_matchHeightOfSuperview {
+    return [self lhs_matchHeightOfSuperviewWithPadding:0];
+}
+
+- (NSLayoutConstraint *)lhs_matchWidthOfSuperview {
+    return [self lhs_matchWidthOfSuperviewWithPadding:0];
 }
 
 - (NSArray *)lhs_fillHeightOfSuperview {
