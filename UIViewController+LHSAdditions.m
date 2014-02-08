@@ -22,6 +22,10 @@
         UINavigationController *navigationController = (UINavigationController *)rootViewController;
         return [UIViewController lhs_topViewControllerWithRootViewController:navigationController.visibleViewController];
     }
+    else if ([rootViewController isKindOfClass:[UISplitViewController class]]) {
+        UISplitViewController *splitViewController = (UISplitViewController *)rootViewController;
+        return [UIViewController lhs_topViewControllerWithRootViewController:splitViewController.viewControllers[1]];
+    }
     else if (rootViewController.presentedViewController) {
         UIViewController *presentedViewController = rootViewController.presentedViewController;
         return [UIViewController lhs_topViewControllerWithRootViewController:presentedViewController];
