@@ -16,7 +16,6 @@
 		37405C17186150250052213A /* UIApplication+LHSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 37405C16186150250052213A /* UIApplication+LHSAdditions.m */; };
 		37C6D617186B872E0096FA88 /* UIViewController+LHSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 371EE5D1185B630A005DB908 /* UIViewController+LHSAdditions.m */; };
 		37C6D618186B872E0096FA88 /* NSAttributedString+Attributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 371EE5D2185B630A005DB908 /* NSAttributedString+Attributes.m */; };
-		37C6D619186B872E0096FA88 /* FMDatabase+LHSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 371EE5D4185B630A005DB908 /* FMDatabase+LHSAdditions.m */; };
 		37C6D61A186B872E0096FA88 /* UIView+LHSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 371EE5D6185B630A005DB908 /* UIView+LHSAdditions.m */; };
 		37DCAF12186B325900417D36 /* UIImage+LHSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DCAF11186B325900417D36 /* UIImage+LHSAdditions.m */; };
 		37DCAF17186B482900417D36 /* UIScreen+LHSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DCAF16186B482900417D36 /* UIScreen+LHSAdditions.m */; };
@@ -39,8 +38,6 @@
 		371EE5D0185B630A005DB908 /* UIViewController+LHSAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LHSAdditions.h"; sourceTree = "<group>"; };
 		371EE5D1185B630A005DB908 /* UIViewController+LHSAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LHSAdditions.m"; sourceTree = "<group>"; };
 		371EE5D2185B630A005DB908 /* NSAttributedString+Attributes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Attributes.m"; sourceTree = "<group>"; };
-		371EE5D3185B630A005DB908 /* FMDatabase+LHSAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+LHSAdditions.h"; sourceTree = "<group>"; };
-		371EE5D4185B630A005DB908 /* FMDatabase+LHSAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+LHSAdditions.m"; sourceTree = "<group>"; };
 		371EE5D5185B630A005DB908 /* UIView+LHSAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+LHSAdditions.h"; sourceTree = "<group>"; };
 		371EE5D6185B630A005DB908 /* UIView+LHSAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LHSAdditions.m"; sourceTree = "<group>"; };
 		371EE5D7185B630A005DB908 /* NSAttributedString+Attributes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Attributes.h"; sourceTree = "<group>"; };
@@ -89,8 +86,6 @@
 				371EE5D0185B630A005DB908 /* UIViewController+LHSAdditions.h */,
 				371EE5D1185B630A005DB908 /* UIViewController+LHSAdditions.m */,
 				371EE5D2185B630A005DB908 /* NSAttributedString+Attributes.m */,
-				371EE5D3185B630A005DB908 /* FMDatabase+LHSAdditions.h */,
-				371EE5D4185B630A005DB908 /* FMDatabase+LHSAdditions.m */,
 				371EE5D5185B630A005DB908 /* UIView+LHSAdditions.h */,
 				371EE5D6185B630A005DB908 /* UIView+LHSAdditions.m */,
 				371EE5D7185B630A005DB908 /* NSAttributedString+Attributes.h */,
@@ -188,7 +183,6 @@
 			files = (
 				37C6D617186B872E0096FA88 /* UIViewController+LHSAdditions.m in Sources */,
 				37C6D618186B872E0096FA88 /* NSAttributedString+Attributes.m in Sources */,
-				37C6D619186B872E0096FA88 /* FMDatabase+LHSAdditions.m in Sources */,
 				37C6D61A186B872E0096FA88 /* UIView+LHSAdditions.m in Sources */,
 				371EE5E7185B6390005DB908 /* LHSCategoryCollection.m in Sources */,
 				37405C17186150250052213A /* UIApplication+LHSAdditions.m in Sources */,
