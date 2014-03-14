@@ -186,11 +186,9 @@
 {
 	// kCTFontFamilyNameAttribute + kCTFontTraitsAttribute
 	CTFontSymbolicTraits symTrait = (isBold?kCTFontBoldTrait:0) | (isItalic?kCTFontItalicTrait:0);
-	NSDictionary* trait = [NSDictionary dictionaryWithObject:[NSNumber numberWithInt:symTrait]
-                                                      forKey:(BRIDGE_CAST NSString*)kCTFontSymbolicTrait];
-	NSDictionary* attr = [NSDictionary dictionaryWithObjectsAndKeys:
-						  fontFamily,kCTFontFamilyNameAttribute,
-						  trait,kCTFontTraitsAttribute,nil];
+	NSDictionary* trait = @{(BRIDGE_CAST NSString*)kCTFontSymbolicTrait: [NSNumber numberWithInt:symTrait]};
+	NSDictionary* attr = @{(id)kCTFontFamilyNameAttribute: fontFamily,
+						  (id)kCTFontTraitsAttribute: trait};
 	
 	CTFontDescriptorRef desc = CTFontDescriptorCreateWithAttributes((BRIDGE_CAST CFDictionaryRef)attr);
 	if (!desc) return;
@@ -226,7 +224,7 @@
 -(void)setTextUnderlineStyle:(int32_t)style range:(NSRange)range
 {
 	[self removeAttribute:(BRIDGE_CAST NSString*)kCTUnderlineStyleAttributeName range:range]; // Work around for Apple leak
-	[self addAttribute:(BRIDGE_CAST NSString*)kCTUnderlineStyleAttributeName value:[NSNumber numberWithInt:style] range:range];
+	[self addAttribute:(BRIDGE_CAST NSString*)kCTUnderlineStyleAttributeName value:@(style) range:range];
 }
 
 -(void)setTextBold:(BOOL)isBold range:(NSRange)range
