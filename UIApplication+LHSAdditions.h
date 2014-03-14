@@ -14,5 +14,6 @@
 + (BOOL)isIOS6OrGreater;
 + (CGSize)currentSize;
 + (CGSize)sizeInOrientation:(UIInterfaceOrientation)orientation;
++ (void)lhs_setNetworkActivityIndicatorVisible:(BOOL)setVisible;
 
 @end

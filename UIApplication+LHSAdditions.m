@@ -32,4 +32,19 @@
     return size;
 }
 
++ (void)lhs_setNetworkActivityIndicatorVisible:(BOOL)setVisible {
+    static NSInteger LHSNumberOfCallsToSetVisible = 0;
+    if (setVisible) {
+        LHSNumberOfCallsToSetVisible++;
+    }
+    else {
+        LHSNumberOfCallsToSetVisible--;
+    }
+
+    // Display the indicator as long as our static counter is > 0.
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:(LHSNumberOfCallsToSetVisible > 0)];
+    });
+}
+
 @end
