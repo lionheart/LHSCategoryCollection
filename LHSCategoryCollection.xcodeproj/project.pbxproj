@@ -49,6 +49,7 @@
 		371EE5E6185B6390005DB908 /* LHSCategoryCollection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHSCategoryCollection.m; sourceTree = "<group>"; };
 		372AE82818D89FA200BBA171 /* UIViewController+LHSKeyboardAdjustment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LHSKeyboardAdjustment.h"; sourceTree = "<group>"; };
 		372AE82918D89FA200BBA171 /* UIViewController+LHSKeyboardAdjustment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LHSKeyboardAdjustment.m"; sourceTree = "<group>"; };
+		372AE82E18D8A93B00BBA171 /* LHSKeyboardAdjusting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHSKeyboardAdjusting.h; sourceTree = "<group>"; };
 		372AEEF9186B85E100F131A9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		372AEEFB186B85EA00F131A9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		37405C1118613A890052213A /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
@@ -88,6 +89,7 @@
 				37405C1218613A890052213A /* NSData+Base64.m */,
 				371EE5D0185B630A005DB908 /* UIViewController+LHSAdditions.h */,
 				371EE5D1185B630A005DB908 /* UIViewController+LHSAdditions.m */,
+				372AE82E18D8A93B00BBA171 /* LHSKeyboardAdjusting.h */,
 				372AE82818D89FA200BBA171 /* UIViewController+LHSKeyboardAdjustment.h */,
 				372AE82918D89FA200BBA171 /* UIViewController+LHSKeyboardAdjustment.m */,
 				371EE5D2185B630A005DB908 /* NSAttributedString+Attributes.m */,

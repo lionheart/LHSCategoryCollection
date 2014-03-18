@@ -1,4 +1,4 @@
-//
+ //
 //  UIViewController+LHSKeyboardAdjustment.h
 //  LHSCategoryCollection
 //
@@ -7,14 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LHSKeyboardAdjusting.h"
 
-@protocol LHSKeyboardResizing <NSObject>
-
-- (NSLayoutConstraint *)keyboardResizingBottomConstraint;
-
-@end
-
-@interface UIViewController (LHSKeyboardAdjustment) <LHSKeyboardResizing>
+@interface UIViewController (LHSKeyboardAdjustment) <LHSKeyboardAdjusting>
 
 - (void)lhs_keyboardWillHide:(NSNotification *)sender;
 - (void)lhs_keyboardDidShow:(NSNotification *)sender;

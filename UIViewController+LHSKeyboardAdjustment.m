@@ -15,7 +15,7 @@
                                              selector:@selector(lhs_keyboardWillHide:)
                                                  name:UIKeyboardWillHideNotification
                                                object:nil];
-
+    
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(lhs_keyboardDidShow:)
                                                  name:UIKeyboardDidShowNotification
@@ -28,17 +28,23 @@
 }
 
 - (void)lhs_keyboardWillHide:(NSNotification *)sender {
-    if ([self respondsToSelector:@selector(keyboardResizingBottomConstraint)]) {
-        self.keyboardResizingBottomConstraint.constant = 0;
+    BOOL enabled = [self respondsToSelector:@selector(keyboardAdjustingBottomConstraint)];
+    NSAssert(enabled, @"keyboardAdjustingBottomConstraint must be implemented for keyboard adjusting to work appropriately.");
+    
+    if (enabled) {
+        self.keyboardAdjustingBottomConstraint.constant = 0;
         [self.view layoutIfNeeded];
     }
 }
 
 - (void)lhs_keyboardDidShow:(NSNotification *)sender {
-    if ([self respondsToSelector:@selector(keyboardResizingBottomConstraint)]) {
+    BOOL enabled = [self respondsToSelector:@selector(keyboardAdjustingBottomConstraint)];
+    NSAssert(enabled, @"keyboardAdjustingBottomConstraint must be implemented for keyboard adjusting to work appropriately.");
+    
+    if (enabled) {
         CGRect frame = [sender.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
         CGRect newFrame = [self.view convertRect:frame fromView:[[UIApplication sharedApplication] delegate].window];
-        self.keyboardResizingBottomConstraint.constant = newFrame.origin.y - CGRectGetHeight(self.view.frame);
+        self.keyboardAdjustingBottomConstraint.constant = newFrame.origin.y - CGRectGetHeight(self.view.frame);
         [self.view layoutIfNeeded];
     }
 }
