@@ -29,7 +29,7 @@
 
 - (void)lhs_keyboardWillHide:(NSNotification *)sender {
     BOOL enabled = [self respondsToSelector:@selector(keyboardAdjustingBottomConstraint)];
-    NSAssert(enabled, @"keyboardAdjustingBottomConstraint must be implemented for keyboard adjusting to work appropriately.");
+    NSAssert(enabled, @"keyboardAdjustingBottomConstraint must be implemented to enable automatic keyboard adjustment.");
     
     if (enabled) {
         self.keyboardAdjustingBottomConstraint.constant = 0;
@@ -39,7 +39,7 @@
 
 - (void)lhs_keyboardDidShow:(NSNotification *)sender {
     BOOL enabled = [self respondsToSelector:@selector(keyboardAdjustingBottomConstraint)];
-    NSAssert(enabled, @"keyboardAdjustingBottomConstraint must be implemented for keyboard adjusting to work appropriately.");
+    NSAssert(enabled, @"keyboardAdjustingBottomConstraint must be implemented to enable automatic keyboard adjustment.");
     
     if (enabled) {
         CGRect frame = [sender.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
