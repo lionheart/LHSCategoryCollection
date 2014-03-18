@@ -9,11 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "LHSKeyboardAdjusting.h"
 
+typedef void (^LHSKeyboardAdjustingBlock)();
+
 @interface UIViewController (LHSKeyboardAdjustment) <LHSKeyboardAdjusting>
 
 - (void)lhs_keyboardWillHide:(NSNotification *)sender;
 - (void)lhs_keyboardDidShow:(NSNotification *)sender;
-- (void)lhs_addObserversForKeyboardAdjustment;
-- (void)lhs_removeObserversForKeyboardAdjustment;
+- (void)lhs_activateKeyboardAdjustment;
+- (void)lhs_activateKeyboardAdjustmentWithShow:(LHSKeyboardAdjustingBlock)show
+                                          hide:(LHSKeyboardAdjustingBlock)hide;
+- (void)lhs_deactivateKeyboardAdjustment;
 
 @end

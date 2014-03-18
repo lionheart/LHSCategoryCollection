@@ -10,19 +10,23 @@
 
 @implementation UIViewController (LHSKeyboardAdjustment)
 
-- (void)lhs_addObserversForKeyboardAdjustment {
+- (void)lhs_activateKeyboardAdjustment {
+    [self lhs_activateKeyboardAdjustmentWithShow:nil hide:nil];
+}
+
+- (void)lhs_activateKeyboardAdjustmentWithShow:(LHSKeyboardAdjustingBlock)show hide:(LHSKeyboardAdjustingBlock)hide {
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(lhs_keyboardWillHide:)
                                                  name:UIKeyboardWillHideNotification
-                                               object:nil];
+                                               object:hide];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(lhs_keyboardDidShow:)
                                                  name:UIKeyboardDidShowNotification
-                                               object:nil];;
+                                               object:show];;
 }
 
-- (void)lhs_removeObserversForKeyboardAdjustment {
+- (void)lhs_deactivateKeyboardAdjustment {
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillHideNotification object:nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardDidShowNotification object:nil];
 }
@@ -32,6 +36,11 @@
     NSAssert(enabled, @"keyboardAdjustingBottomConstraint must be implemented to enable automatic keyboard adjustment.");
     
     if (enabled) {
+        LHSKeyboardAdjustingBlock block = sender.object;
+        if (block) {
+            block();
+        }
+
         self.keyboardAdjustingBottomConstraint.constant = 0;
         [self.view layoutIfNeeded];
     }
@@ -42,6 +51,11 @@
     NSAssert(enabled, @"keyboardAdjustingBottomConstraint must be implemented to enable automatic keyboard adjustment.");
     
     if (enabled) {
+        LHSKeyboardAdjustingBlock block = sender.object;
+        if (block) {
+            block();
+        }
+
         CGRect frame = [sender.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
         CGRect newFrame = [self.view convertRect:frame fromView:[[UIApplication sharedApplication] delegate].window];
         self.keyboardAdjustingBottomConstraint.constant = newFrame.origin.y - CGRectGetHeight(self.view.frame);
