@@ -10,6 +10,7 @@
 		371EE5E0185B6390005DB908 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371EE5DF185B6390005DB908 /* Foundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		371EE5E5185B6390005DB908 /* LHSCategoryCollection.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 371EE5E4185B6390005DB908 /* LHSCategoryCollection.h */; };
 		371EE5E7185B6390005DB908 /* LHSCategoryCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 371EE5E6185B6390005DB908 /* LHSCategoryCollection.m */; };
+		372AE82A18D89FA200BBA171 /* UIViewController+LHSKeyboardAdjustment.m in Sources */ = {isa = PBXBuildFile; fileRef = 372AE82918D89FA200BBA171 /* UIViewController+LHSKeyboardAdjustment.m */; };
 		372AEEFA186B85E100F131A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372AEEF9186B85E100F131A9 /* UIKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		372AEEFC186B85EA00F131A9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372AEEFB186B85EA00F131A9 /* QuartzCore.framework */; };
 		37405C1318613A890052213A /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 37405C1218613A890052213A /* NSData+Base64.m */; };
@@ -46,6 +47,8 @@
 		371EE5E3185B6390005DB908 /* LHSCategoryCollection-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LHSCategoryCollection-Prefix.pch"; sourceTree = "<group>"; };
 		371EE5E4185B6390005DB908 /* LHSCategoryCollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHSCategoryCollection.h; sourceTree = "<group>"; };
 		371EE5E6185B6390005DB908 /* LHSCategoryCollection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHSCategoryCollection.m; sourceTree = "<group>"; };
+		372AE82818D89FA200BBA171 /* UIViewController+LHSKeyboardAdjustment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LHSKeyboardAdjustment.h"; sourceTree = "<group>"; };
+		372AE82918D89FA200BBA171 /* UIViewController+LHSKeyboardAdjustment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LHSKeyboardAdjustment.m"; sourceTree = "<group>"; };
 		372AEEF9186B85E100F131A9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		372AEEFB186B85EA00F131A9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		37405C1118613A890052213A /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 				37405C1218613A890052213A /* NSData+Base64.m */,
 				371EE5D0185B630A005DB908 /* UIViewController+LHSAdditions.h */,
 				371EE5D1185B630A005DB908 /* UIViewController+LHSAdditions.m */,
+				372AE82818D89FA200BBA171 /* UIViewController+LHSKeyboardAdjustment.h */,
+				372AE82918D89FA200BBA171 /* UIViewController+LHSKeyboardAdjustment.m */,
 				371EE5D2185B630A005DB908 /* NSAttributedString+Attributes.m */,
 				371EE5D5185B630A005DB908 /* UIView+LHSAdditions.h */,
 				371EE5D6185B630A005DB908 /* UIView+LHSAdditions.m */,
@@ -186,6 +191,7 @@
 				37C6D61A186B872E0096FA88 /* UIView+LHSAdditions.m in Sources */,
 				371EE5E7185B6390005DB908 /* LHSCategoryCollection.m in Sources */,
 				37405C17186150250052213A /* UIApplication+LHSAdditions.m in Sources */,
+				372AE82A18D89FA200BBA171 /* UIViewController+LHSKeyboardAdjustment.m in Sources */,
 				37DCAF17186B482900417D36 /* UIScreen+LHSAdditions.m in Sources */,
 				37405C1318613A890052213A /* NSData+Base64.m in Sources */,
 				37DCAF12186B325900417D36 /* UIImage+LHSAdditions.m in Sources */,
