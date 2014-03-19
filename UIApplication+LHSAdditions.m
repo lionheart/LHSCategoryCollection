@@ -47,4 +47,15 @@
     });
 }
 
++ (NSString *)lhs_formattedVersionString {
+    NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
+    return infoDictionary[@"CFBundleShortVersionString"];
+    
+}
+
++ (NSString *)lhs_formattedBuildNumberString {
+    NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
+    return infoDictionary[(NSString *)kCFBundleVersionKey];
+}
+
 @end
