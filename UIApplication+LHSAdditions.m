@@ -49,13 +49,10 @@
 
 + (NSString *)lhs_formattedVersionString {
     NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
-    return infoDictionary[@"CFBundleShortVersionString"];
+    NSString *appVersion = infoDictionary[@"CFBundleShortVersionString"];
+    NSString *bundleVersion = infoDictionary[@"CFBundleVersion"];
     
-}
-
-+ (NSString *)lhs_formattedBuildNumberString {
-    NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
-    return infoDictionary[(NSString *)kCFBundleVersionKey];
+    return [NSString stringWithFormat:@"%@ (%@)", appVersion, bundleVersion];
 }
 
 @end
