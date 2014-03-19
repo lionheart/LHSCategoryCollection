@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>8C3545E5-DB3F-48F2-8BD8-0D26262F11D1</string>
+	<string>295071A7-1F34-45CD-887B-562E8D24EC16</string>
 	<key>IDESourceControlProjectName</key>
 	<string>LHSCategoryCollection</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>C3DB7344-2DBF-4C22-94CD-466FD8D89C68</key>
-		<string>ssh://github.com/lionheart/LHSCategoryCollection.git</string>
+		<key>1BEDADF4-4B7F-4E7A-B9C5-88B18625130B</key>
+		<string>https://github.com/cazares/LHSCategoryCollection</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>LHSCategoryCollection.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>C3DB7344-2DBF-4C22-94CD-466FD8D89C68</key>
+		<key>1BEDADF4-4B7F-4E7A-B9C5-88B18625130B</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/lionheart/LHSCategoryCollection.git</string>
+	<string>https://github.com/cazares/LHSCategoryCollection</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>C3DB7344-2DBF-4C22-94CD-466FD8D89C68</string>
+	<string>1BEDADF4-4B7F-4E7A-B9C5-88B18625130B</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>C3DB7344-2DBF-4C22-94CD-466FD8D89C68</string>
+			<string>1BEDADF4-4B7F-4E7A-B9C5-88B18625130B</string>
 			<key>IDESourceControlWCCName</key>
 			<string>LHSCategoryCollection</string>
 		</dict>

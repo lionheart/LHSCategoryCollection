@@ -47,4 +47,12 @@
     });
 }
 
++ (NSString *)lhs_formattedVersionString {
+    NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
+    NSString *appVersion = infoDictionary[@"CFBundleShortVersionString"];
+    NSString *bundleVersion = infoDictionary[@"CFBundleVersion"];
+    
+    return [NSString stringWithFormat:@"%@ (%@)", appVersion, bundleVersion];
+}
+
 @end
