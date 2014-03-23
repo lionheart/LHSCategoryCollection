@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "LHSCategoryCollection"
   s.version      = "0.0.8"
-  s.summary      = "A collection of categories I commonly use in iOS projects."
+  s.summary      = "A collection of helpful categories for use in iOS projects."
   s.homepage     = "lionheartsw.com"
   s.license      = 'Apache 2.0'
   s.author       = { "Dan Loewenherz" => "dan@lionheartsw.com" }

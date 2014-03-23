@@ -63,9 +63,30 @@
     return constraints;
 }
 
+#pragma mark - Expanding
+
 - (NSArray *)lhs_expandToFillSuperview {
     return [[self lhs_fillHeightOfSuperview] arrayByAddingObjectsFromArray:[self lhs_fillWidthOfSuperview]];
 }
+
+- (NSArray *)lhs_expandToFillSuperviewWithVerticalMargin:(CGFloat)verticalMargin
+                                        horizontalMargin:(CGFloat)horizontalMargin {
+    return [self lhs_expandToFillSuperviewWithMargins:UIEdgeInsetsMake(verticalMargin, horizontalMargin, verticalMargin, horizontalMargin)];
+}
+
+- (NSArray *)lhs_expandToFillSuperviewWithMargins:(UIEdgeInsets)margins {
+    NSDictionary *metrics = @{@"top": @(margins.top),
+                              @"right": @(margins.right),
+                              @"bottom": @(margins.bottom),
+                              @"left": @(margins.left) };
+    NSDictionary *views = @{@"view": self};
+    NSMutableArray *constraints = [NSMutableArray array];
+    [constraints addObject:[self.superview lhs_addConstraints:@"H:|-(left)-[view]-(right)-|" metrics:metrics views:views]];
+    [constraints addObject:[self.superview lhs_addConstraints:@"V:|-(top)-[view]-(bottom)-|" metrics:metrics views:views]];
+    return constraints;
+}
+
+#pragma mark - Centering
 
 - (NSArray *)lhs_centerHorizontallyForView:(UIView *)view {
     return [self lhs_centerHorizontallyForView:view width:0];

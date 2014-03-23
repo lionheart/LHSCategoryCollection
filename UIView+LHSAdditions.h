@@ -16,8 +16,13 @@
 - (NSLayoutConstraint *)lhs_matchWidthOfSuperview;
 - (NSLayoutConstraint *)lhs_matchHeightOfSuperview;
 - (NSLayoutConstraint *)lhs_matchWidthOfSuperviewWithPadding:(CGFloat)padding;
-- (NSLayoutConstraint *)lhs_matchHeightOfSuperviewWithPadding:(CGFloat)padding;;
+- (NSLayoutConstraint *)lhs_matchHeightOfSuperviewWithPadding:(CGFloat)padding;
+
 - (NSArray *)lhs_expandToFillSuperview;
+- (NSArray *)lhs_expandToFillSuperviewWithVerticalMargin:(CGFloat)verticalMargin
+                                        horizontalMargin:(CGFloat)horizontalMargin;
+
+- (NSArray *)lhs_expandToFillSuperviewWithMargins:(UIEdgeInsets)margins;
 - (NSArray *)lhs_fillWidthOfSuperview;
 - (NSArray *)lhs_fillHeightOfSuperview;
 - (NSArray *)lhs_addConstraints:(NSString *)constraint views:(NSDictionary *)views;
