@@ -67,6 +67,25 @@
     return [[self lhs_fillHeightOfSuperview] arrayByAddingObjectsFromArray:[self lhs_fillWidthOfSuperview]];
 }
 
+- (NSArray *)lhs_expandToFillSuperviewWithMargins:(UIEdgeInsets)margins {
+    NSDictionary *metrics = @{@"left": @(margins.left),
+                              @"right": @(margins.right),
+                              @"top": @(margins.top),
+                              @"bottom": @(margins.bottom) };
+    NSDictionary *views = @{@"view": self };
+    
+    NSArray *constraints = [self.superview lhs_addConstraints:@"H:|-(left)-[view]-(right)-|" metrics:metrics views:views];
+    return [constraints arrayByAddingObjectsFromArray:[self.superview lhs_addConstraints:@"V:|-(top)-[view]-(bottom)-|" metrics:metrics views:views]];
+}
+
+- (NSArray *)lhs_expandToFillSuperviewWithVerticalMargin:(CGFloat)verticalMargin horizontalMargin:(CGFloat)horizontalMargin {
+    UIEdgeInsets margins = UIEdgeInsetsMake(verticalMargin,    // top
+                                            horizontalMargin,  // left
+                                            verticalMargin,    // bottom
+                                            horizontalMargin); // right
+    return [self lhs_expandToFillSuperviewWithMargins:margins];
+}
+
 - (NSArray *)lhs_centerHorizontallyForView:(UIView *)view {
     return [self lhs_centerHorizontallyForView:view width:0];
 }
