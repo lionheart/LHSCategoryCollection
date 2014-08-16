@@ -127,8 +127,8 @@
 		37F2960018F1DA2F0060089A /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				37F2960118F1DA380060089A /* UIFont+LHSAdditions.m */,
 				37F2960218F1DA380060089A /* UIFont+LHSAdditions.h */,
+				37F2960118F1DA380060089A /* UIFont+LHSAdditions.m */,
 				37F2960318F1DA380060089A /* UIView+LHSAdditions.m */,
 				37F2960418F1DA380060089A /* UIView+LHSAdditions.h */,
 				37F2960518F1DA380060089A /* UIApplication+LHSAdditions.h */,
