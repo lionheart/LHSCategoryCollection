@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "LHSCategoryCollection"
-  s.version      = "0.0.12"
+  s.version      = "0.0.13"
   s.summary      = "A collection of helpful categories for use in iOS projects."
   s.homepage     = "http://lionheartsw.com"
   s.license      = 'Apache 2.0'
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.public_header_files = 'Categories/*.h'
   s.requires_arc = true
 
-  s.platform     = :ios, '6.0'
+  s.platform     = :ios, '8.0'
   s.framework  = 'UIKit'
   s.requires_arc = true
 end
