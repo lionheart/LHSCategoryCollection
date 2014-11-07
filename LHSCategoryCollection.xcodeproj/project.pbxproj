@@ -12,6 +12,7 @@
 		371EE5E7185B6390005DB908 /* LHSCategoryCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 371EE5E6185B6390005DB908 /* LHSCategoryCollection.m */; };
 		372AEEFA186B85E100F131A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372AEEF9186B85E100F131A9 /* UIKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		372AEEFC186B85EA00F131A9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372AEEFB186B85EA00F131A9 /* QuartzCore.framework */; };
+		374B5A9F1A0D512E00A5CC26 /* UIWindow+LHSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 374B5A9E1A0D512E00A5CC26 /* UIWindow+LHSAdditions.m */; };
 		37B85F1019EC30580088E6D3 /* UIAlertController+LHSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B85F0F19EC30580088E6D3 /* UIAlertController+LHSAdditions.m */; };
 		37F2961118F1DA380060089A /* UIFont+LHSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F2960118F1DA380060089A /* UIFont+LHSAdditions.m */; };
 		37F2961218F1DA380060089A /* UIView+LHSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F2960318F1DA380060089A /* UIView+LHSAdditions.m */; };
@@ -45,6 +46,8 @@
 		371EE5E6185B6390005DB908 /* LHSCategoryCollection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHSCategoryCollection.m; sourceTree = "<group>"; };
 		372AEEF9186B85E100F131A9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		372AEEFB186B85EA00F131A9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		374B5A9D1A0D512E00A5CC26 /* UIWindow+LHSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIWindow+LHSAdditions.h"; path = "Categories/UIWindow+LHSAdditions.h"; sourceTree = "<group>"; };
+		374B5A9E1A0D512E00A5CC26 /* UIWindow+LHSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIWindow+LHSAdditions.m"; path = "Categories/UIWindow+LHSAdditions.m"; sourceTree = "<group>"; };
 		37B85F0E19EC30580088E6D3 /* UIAlertController+LHSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIAlertController+LHSAdditions.h"; path = "Categories/UIAlertController+LHSAdditions.h"; sourceTree = "<group>"; };
 		37B85F0F19EC30580088E6D3 /* UIAlertController+LHSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIAlertController+LHSAdditions.m"; path = "Categories/UIAlertController+LHSAdditions.m"; sourceTree = "<group>"; };
 		37F2960118F1DA380060089A /* UIFont+LHSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+LHSAdditions.m"; path = "Categories/UIFont+LHSAdditions.m"; sourceTree = "<group>"; };
@@ -150,6 +153,8 @@
 				37F2962018F2F9050060089A /* UIColor+LHSAdditions.m */,
 				37B85F0E19EC30580088E6D3 /* UIAlertController+LHSAdditions.h */,
 				37B85F0F19EC30580088E6D3 /* UIAlertController+LHSAdditions.m */,
+				374B5A9D1A0D512E00A5CC26 /* UIWindow+LHSAdditions.h */,
+				374B5A9E1A0D512E00A5CC26 /* UIWindow+LHSAdditions.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -213,6 +218,7 @@
 				37B85F1019EC30580088E6D3 /* UIAlertController+LHSAdditions.m in Sources */,
 				37F2961318F1DA380060089A /* UIApplication+LHSAdditions.m in Sources */,
 				371EE5E7185B6390005DB908 /* LHSCategoryCollection.m in Sources */,
+				374B5A9F1A0D512E00A5CC26 /* UIWindow+LHSAdditions.m in Sources */,
 				37F2961618F1DA380060089A /* UIScreen+LHSAdditions.m in Sources */,
 				37F2961818F1DA380060089A /* NSData+Base64.m in Sources */,
 			);

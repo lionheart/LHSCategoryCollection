@@ -11,17 +11,17 @@
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>35FE44AA977402958F5B092E8C51FB3CE5832197</key>
-		<string>ssh://github.com/lionheart/LHSCategoryCollection.git</string>
+		<string>github.com:lionheart/LHSCategoryCollection.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>LHSCategoryCollection.xcodeproj/project.xcworkspace</string>
+	<string>LHSCategoryCollection.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>35FE44AA977402958F5B092E8C51FB3CE5832197</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/lionheart/LHSCategoryCollection.git</string>
+	<string>github.com:lionheart/LHSCategoryCollection.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
