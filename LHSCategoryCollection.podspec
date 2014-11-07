@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.public_header_files = 'Categories/*.h'
   s.requires_arc = true
 
-  s.platform     = :ios, '8.0'
+  s.platform     = :ios, '7.0'
   s.framework  = 'UIKit'
   s.requires_arc = true
 end
