@@ -10,6 +10,6 @@
 
 @interface UIWindow (LHSAdditions)
 
-- (BOOL)takeScreenshotAndSaveToPath:(NSString *)path;
++ (BOOL)lhs_takeScreenshotAndSaveToPath:(NSString *)path;
 
 @end
