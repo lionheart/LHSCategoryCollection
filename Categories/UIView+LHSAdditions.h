@@ -36,4 +36,7 @@
 
 - (CGRect)lhs_centerRect;
 
++ (NSArray *)lhs_addConstraints:(NSString *)format views:(NSArray *)views;
++ (NSArray *)lhs_addConstraints:(NSString *)format metrics:(NSDictionary *)metrics views:(NSArray *)views;
+
 @end

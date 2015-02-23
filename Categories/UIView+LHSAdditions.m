@@ -174,4 +174,20 @@
     return (CGRect){{self.frame.size.width / 2., self.frame.size.height / 2.}, {1, 1}};
 }
 
+#pragma mark - Multi View Helpers
+
++ (NSArray *)lhs_addConstraints:(NSString *)format metrics:(NSDictionary *)metrics views:(NSArray *)views {
+    NSMutableArray *constraints = [NSMutableArray array];
+    for (UIView *view in views) {
+        NSArray *viewConstraints = [view lhs_addConstraints:format metrics:metrics views:@{@"view": view}];
+        [constraints addObjectsFromArray:viewConstraints];
+    }
+    
+    return constraints;
+}
+
++ (NSArray *)lhs_addConstraints:(NSString *)format views:(NSArray *)views {
+    return [UIView lhs_addConstraints:format metrics:nil views:views];
+}
+
 @end
