@@ -179,8 +179,10 @@
 + (NSArray *)lhs_addConstraints:(NSString *)format metrics:(NSDictionary *)metrics views:(NSArray *)views {
     NSMutableArray *constraints = [NSMutableArray array];
     for (UIView *view in views) {
-        NSArray *viewConstraints = [view lhs_addConstraints:format metrics:metrics views:@{@"view": view}];
-        [constraints addObjectsFromArray:viewConstraints];
+        if (view.superview) {
+            NSArray *viewConstraints = [view.superview lhs_addConstraints:format metrics:metrics views:@{@"view": view}];
+            [constraints addObjectsFromArray:viewConstraints];
+        }
     }
     
     return constraints;
