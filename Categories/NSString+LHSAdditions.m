@@ -15,7 +15,7 @@
 }
 
 - (NSString *)lhs_urlEncode {
-    return [self urlEncodeUsingEncoding:NSUTF8StringEncoding];
+    return [self lhs_urlEncodeUsingEncoding:NSUTF8StringEncoding];
 }
 
 - (NSString *)lhs_urlEncodeUsingEncoding:(NSStringEncoding)encoding {
