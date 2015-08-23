@@ -14,4 +14,12 @@
     return NSMakeRange(0, self.length);
 }
 
+- (NSString *)lhs_urlEncode {
+    return [self urlEncodeUsingEncoding:NSUTF8StringEncoding];
+}
+
+- (NSString *)lhs_urlEncodeUsingEncoding:(NSStringEncoding)encoding {
+    return (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(NULL, (CFStringRef)self, NULL, (CFStringRef)@"!*'\"();:@&=+$,/?%#[]% ", CFStringConvertNSStringEncodingToEncoding(encoding)));
+}
+
 @end

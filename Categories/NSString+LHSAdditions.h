@@ -11,5 +11,7 @@
 @interface NSString (LHSAdditions)
 
 - (NSRange)lhs_range;
+- (NSString *)lhs_urlEncode;
+- (NSString *)lhs_urlEncodeUsingEncoding:(NSStringEncoding)encoding;
 
 @end
