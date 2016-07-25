@@ -18,7 +18,7 @@
     return [[[UIDevice currentDevice] systemVersion] floatValue] >= 6.0;
 }
 
-+ (CGSize)currentSize {
++ (CGSize)currentSize NS_EXTENSION_UNAVAILABLE("") {
     return [UIApplication sizeInOrientation:[UIApplication sharedApplication].statusBarOrientation];
 }
 
@@ -32,7 +32,7 @@
     return size;
 }
 
-+ (void)lhs_setNetworkActivityIndicatorVisible:(BOOL)setVisible {
++ (void)lhs_setNetworkActivityIndicatorVisible:(BOOL)setVisible NS_EXTENSION_UNAVAILABLE("") {
     static NSInteger LHSNumberOfCallsToSetVisible = 0;
     if (setVisible) {
         LHSNumberOfCallsToSetVisible++;

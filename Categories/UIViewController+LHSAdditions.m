@@ -9,7 +9,7 @@
 
 @implementation UIViewController (LHSAdditions)
 
-+ (UIViewController *)lhs_topViewController {
++ (UIViewController *)lhs_topViewController NS_EXTENSION_UNAVAILABLE("") {
     return [UIViewController lhs_topViewControllerWithRootViewController:[UIApplication sharedApplication].keyWindow.rootViewController];
 }
 

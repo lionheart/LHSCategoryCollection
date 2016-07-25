@@ -48,7 +48,7 @@
 // Source: https://developer.apple.com/library/ios/qa/qa1703/_index.html#//apple_ref/doc/uid/DTS40010193
 // Edited by: http://stackoverflow.com/a/8017292/39155
 // With further modifications
-+ (UIImage *)lhs_screenshot {
++ (UIImage *)lhs_screenshot NS_EXTENSION_UNAVAILABLE("") {
     CGSize imageSize = [UIScreen mainScreen].bounds.size;
     
     UIGraphicsBeginImageContextWithOptions(imageSize, NO, 0);

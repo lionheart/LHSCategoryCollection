@@ -10,7 +10,7 @@
 
 @implementation UIWindow (LHSAdditions)
 
-+ (BOOL)lhs_takeScreenshotAndSaveToPath:(NSString *)path {
++ (BOOL)lhs_takeScreenshotAndSaveToPath:(NSString *)path NS_EXTENSION_UNAVAILABLE("") {
     UIWindow *keyWindow = [[UIApplication sharedApplication] keyWindow];
     UIGraphicsBeginImageContextWithOptions(keyWindow.bounds.size, NO, 0);
     [keyWindow drawViewHierarchyInRect:keyWindow.bounds afterScreenUpdates:YES];
